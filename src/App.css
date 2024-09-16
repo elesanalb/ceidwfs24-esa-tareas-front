@@ -1,0 +1,152 @@
+*{
+  margin: 0; 
+  padding: 0;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;   
+}
+
+form{
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, button{
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+form input[type="text"]{
+  width: 500px;
+  border: none;
+  border-bottom: 1px dashed #999;
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+
+form input[type="submit"]{
+  margin-top: 20px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 15px;
+}
+form input[type="submit"]:hover{
+  background-color: #a5dbff;
+}
+
+.tareas{
+  width: 500px;
+  margin: 20px auto 0;
+}
+
+.tarea{
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.tarea h3, .tarea input{
+  font-size: 2em;
+  color: #333;
+  width: 100%;
+  border: none;
+  font-weight: 300;
+  text-align: left;
+  display: none;
+}
+
+.tarea input{
+  border-bottom: 1px dashed #999;
+}
+
+.tarea .visible{
+  display: block;
+}
+
+.boton{
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.editar{
+  background-color: rgb(220, 250, 175);
+}
+.editar:hover{
+  background-color: rgb(152, 222, 47);
+}
+
+.editando{
+  background-color: rgb(41, 194, 41);
+}
+.editando:hover{
+  background-color: rgb(162, 255, 162);
+}
+
+.borrar{
+  background-color: rgb(255, 191, 191);
+}
+.borrar:hover{
+  background-color: rgb(255, 77, 77);
+}
+
+.cancelar{
+  border-color: #a00;
+}
+.cancelar:hover{
+  background-color: rgb(255, 195, 195);
+}
+
+.estado{
+  border: none;
+  width: 50px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: #333;
+  /* margin-top: 20px; */
+  transition: background-color 0.7s;
+}
+
+.estado span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #a00;
+  position: relative;
+  left: -15px;
+  top: -10px;
+  transition: left 0.7s;
+}
+
+.terminada span{
+  background-color: rgb(0, 205, 0);
+  left: 15px;
+}
+
+.terminada{
+  background-color: #c7c7c7;
+}
+
+p{
+  display: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: grey;
+}
